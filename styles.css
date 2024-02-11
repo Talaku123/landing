@@ -1,0 +1,293 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+
+nav{
+  background-color: #f2eaea;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
+  padding: 4px 0;
+  width: 100%;
+}
+
+.landing-sec-header{
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+.landing-sec-header li{
+  height: 50px;
+  padding: 15px 50px;
+  text-align: center;
+  
+}
+.landing-sec-header a{
+  color: black;
+  text-decoration:none ;
+}
+.sweet {
+  font-family: fantasy;
+   margin-top: -60px;
+  width: 100px;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  align-items: flex-start;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  list-style: none;
+  justify-content: flex-start;
+  position: fixed;
+  row-gap: 30px;
+  right: 0;
+  top: 0;
+  width: 250px;
+  z-index: 9;
+}
+.sidebar li{
+  width: 100%;
+}
+
+.menu{
+   display: none;
+}
+.close-bar{
+   padding-top: 10px;
+}
+.fashion-img{
+  opacity: .3;
+  padding: 200px 300px;
+  width: 120%;
+}
+.wave{
+  height: 100dvh;
+  width: 100%;
+}
+.d-md-block{
+  display: flex;
+  font-size: 140px;
+  font-weight: bolder;
+  margin-top: -73dvh;
+  position: relative;
+  text-align: justify;
+  width: 100%;
+
+}
+
+
+.mb-4{
+  background-color: rgb(195, 61, 213);
+  border-radius: 80%;
+  height: 260px;
+  margin: -58rem 5rem;
+  opacity: .2;
+  width: 250px;
+  
+}
+.circle-within {
+  background-color: rgb(40, 13, 14);
+  border-radius: 80%;
+  height: 460px;
+  margin: -8rem 55rem;
+  opacity: .4;
+  position: absolute;
+  width: 450px;
+}
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 10s infinite;
+}
+
+.mb-5{
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  background: url(https://ilumina.ca/img/blue_bg_02.png)
+  repeat-x;
+  height: 120px;
+  position: absolute;
+  opacity: .8;
+  transform: translate3d(0, 0, 0);
+  top: 688px;
+  min-width: 1500px;
+}
+
+
+.horizontal{
+  margin: 175px 300px;
+  
+}
+
+.btn{
+  margin-top: 25px;
+}
+.btn a{
+  color: show;
+  text-decoration: none;
+}
+.about-head{
+  /* display: flex; */
+  font-size: 6cqh;
+  margin-bottom: 40px;
+  /* justify-content: flex-end; */
+}
+.about-head a{
+  color: black;
+  text-decoration: none;
+}
+
+p{
+  font-size: 25px;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.ancher{
+
+  text-decoration: none;
+}
+
+.container-fluid-about{
+  margin: 280px 90px;
+  text-align: center;
+  
+}
+#js-btn{
+  
+  border: none;
+  border-radius: 5px ;
+  color: 0000;
+  display: block;
+  font-size: larger;
+  letter-spacing: 10px;
+  margin: 50px 0;
+ 
+} 
+/* .is-subscribed{
+  background-color: rgb(235, 11, 11);
+  color: snow;
+
+} */
+
+.under-footer {
+  background-color: hwb(0 28% 65% / 0.483);
+  padding: 150px;
+  width: 100%;
+
+}
+.under-footer li{
+  color: blue;
+  column-gap: 15rem;
+  display: inline-flex;
+  list-style: none;
+  text-align: start;
+}
+
+  /* ---------- Log In starts here------- */
+
+/*   
+  .mb-4{
+    font-size: 6dvh;
+    padding: 13rem 0 2rem 0;
+    text-align: center;
+  } */
+  
+  .wrapper{
+    display: flex;
+    min-height: 99dvh;
+    width: 100%;
+  }
+  .inner{
+    column-gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   
+  }
+  
+  .form-group,.form-wrapper{
+    box-shadow: none;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .form-wrapper{
+    row-gap: 3px;
+  }
+ 
+/* -------- media query starts here------------ */
+
+
+@media screen and (min-width: 480px) and (max-width: 1080px) {
+
+    .hidden-this{
+      display: none;
+    }
+   .menu{
+      display: block;
+   }
+   .fashion-img{
+    opacity: .4;
+    padding: 180px 0;
+    width: 110%;
+   }
+   .d-md-block{
+    font-size: 100px;
+    margin-top: -43rem;
+    
+   }
+   .mb-4{
+    height: 170px;
+    margin-left: 60px;
+    margin-top: -40rem;
+    width: 170px;
+   }
+   
+   .circle-within{
+    height: 230px;
+    margin-left: 30dvh;
+    margin-top: 40px ;
+    width: 250px;
+     
+   }
+   .horizontal{
+    margin: 130px auto;
+   width: 100%;
+    
+  }
+   .under-footer {
+    width: 100%;
+   }
+  }
+
+
+
+
+/* ---------keyfrems starts hear------- */
+
+
+@keyframes mb-5{
+  0% {
+     margin-left: 0;
+  }
+  100% {
+     margin-left: -1500px;
+  }
+}
+
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+  -webkit-transform: translateY(0); }
+40% {
+  -webkit-transform: translateY(-30px); }
+60% {
+  -webkit-transform: translateY(-80px); } 
+}
